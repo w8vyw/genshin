@@ -1,0 +1,8 @@
+import '../index.html'
+import '../room.html'
+import '../sass/main.scss'
+import './assets/components/heroesParsing'
+import './assets/components/weaponsParsing'
+import './assets/components/modals'
+import './assets/components/pickInterface'
+import './backend'

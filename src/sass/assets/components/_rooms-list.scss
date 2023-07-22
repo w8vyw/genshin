@@ -1,0 +1,56 @@
+.rooms-list {
+	padding: 35px 0 70px 0;
+	font-size: 15px;
+	&__heading {
+		padding: 0 43px 0px 25px;
+		margin-bottom: 35px;
+		display: flex;
+		font-size: 30px;
+		justify-content: space-between;
+		&-title--members {margin-left: 175px;}
+		&-title--start {margin-left: 105px;}
+		&-title--status {margin-right: 63px;}
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		max-height: 515px;
+		overflow-y: auto;
+		padding-right: 10px;
+		&::-webkit-scrollbar-track {
+			background: transparent;
+			border-radius: 8px;
+		}
+	}
+}
+
+.room-preview {
+	cursor: pointer;
+	padding: 25px;
+	@include transparent-color;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	color: $gray;
+	&__members {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+	}
+	&__team-1,
+	&__team-2,
+	&__start-time,
+	&__status {
+		width: 220px;
+		padding: 15px;
+		background: $green;
+		border-radius: 10px;
+	}
+	span {
+		font-size: 20px;
+		color: white;
+	}
+}

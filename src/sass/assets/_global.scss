@@ -1,0 +1,74 @@
+body {
+	display: flex;
+	flex-direction: column;
+	.page {flex-grow: 1;}
+
+	background: linear-gradient(107.56deg, #182d72 0%, #1a5677 55.73%, #421e4b 99.99%);
+	font-family: 'Nunito',
+	sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	color: white;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: $green;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #69b0d0;
+	border-radius: 8px;
+}
+
+::selection {
+	background: $green;
+}
+
+.wrapper {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+input {
+	background: $green;
+	padding: 10px 15px;
+	border-radius: 10px;
+
+	&::placeholder {
+		font-size: 15px;
+		color: $gray;
+	}
+}
+
+.decorate-line {
+	position: relative;
+	width: 100%;
+	height: 3px;
+	background: #487992;
+
+	&::before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background: #487992;
+		transform: rotate(45deg);
+	}
+
+	&::before {
+		top: -3px;
+		left: 0;
+	}
+
+	&::after {
+		top: -3px;
+		right: 0;
+	}
+}

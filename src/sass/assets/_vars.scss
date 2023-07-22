@@ -1,0 +1,12 @@
+// Colors ----------------------------------------
+
+@mixin transparent-color {
+	background-color: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(7.5px);
+}
+
+$green: #1a5677;
+$gray: #aaa;
+$dark: rgba(0, 0, 0, 0.5);
+
+// ----------------------------------------

@@ -1,0 +1,112 @@
+.room {
+	padding: 100px 0;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__start-btn {
+		align-self: flex-end;
+	}
+}
+
+.team {
+	&__name {
+		margin-bottom: 20px;
+		padding: 10px;
+		text-align: center;
+		@include transparent-color;
+		border-radius: 10px;
+	}
+
+	&__timers {
+		margin-bottom: 40px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 30px;
+	}
+
+	&__decorate-elem {
+		width: 20px;
+		height: 20px;
+		@include transparent-color;
+		transform: rotate(45deg);
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		max-width: 380px;
+
+		&--bans {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__decorate-line {
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		width: 80px;
+		height: 80px;
+		background: $dark;
+		border-radius: 50%;
+		overflow: hidden;
+
+		&--unlocked {
+			@include transparent-color
+		}
+	}
+}
+
+.info-column {
+	text-align: center;
+
+	span {
+		display: block;
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
+
+	&__action-now {
+		font-size: 15px;
+	}
+
+	&__current-team {
+		margin-bottom: 66px;
+	}
+
+	&__bans {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+
+	&__decorate-arrow {
+		margin-bottom: 35px;
+		transition: .3s ease-in-out;
+		transform: rotate(90deg);
+
+		&--team-1 {
+			transform: rotate(0deg);
+		}
+
+		&--team-2 {
+			transform: rotate(-180deg);
+		}
+	}
+
+	&__picks {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+}

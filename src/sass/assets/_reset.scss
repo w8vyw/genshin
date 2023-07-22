@@ -1,0 +1,10 @@
+*, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0; border: 0; outline: none; font: inherit; color: inherit;}
+html, body {width: 100%; min-height: 100vh; scroll-behavior: smooth; font-size: 20px; line-height: 1.2; font-weight: 400; color: black;}
+img, picture, video {display: block; max-width: 100%;}
+a, a:link, a:hover, a:focus, a:active, a:visited {text-decoration: none;}
+ol, ul, li {list-style: none;}
+h1, h2, h3, h4, h5, h6, p, article, {overflow-wrap: break-word;}
+header, nav, main, section, article, aside, footer {display: block;}
+a, button, details, select {cursor: pointer;}
+summary {display: block;}
+button {background: none;}

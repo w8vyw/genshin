@@ -1,0 +1,13 @@
+@mixin font($family, $style, $weight, $url) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src: url("../../fonts/#{$url}.woff2") format("woff2"), url("../../fonts/#{$url}.woff") format("woff");
+    font-display: swap;
+  }
+}
+@include font(Podkova, normal, 600, Podkova/Podkova-600);
+@include font(Nunito, normal, 300, Nunito/Nunito-300);
+@include font(Nunito, normal, 500, Nunito/Nunito-500);
+@include font(Nunito, normal, 600, Nunito/Nunito-600);
